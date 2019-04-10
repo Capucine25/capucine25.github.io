@@ -28,6 +28,10 @@
     });
   }
 
+  FB.login(function(response) {
+    console.log(response);
+  }, {scope: 'groups_access_member_info'});
+
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '2274682666185075',
@@ -51,7 +55,7 @@
 
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
-    }, {scope: 'groups_access_member_info'});
+    });
 
   };
 
