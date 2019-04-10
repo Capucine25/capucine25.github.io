@@ -28,10 +28,6 @@
     });
   }
 
-  FB.login(function(response) {
-    console.log(response);
-  }, {scope: 'pages_show_list'});
-
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '2274682666185075',
@@ -89,8 +85,8 @@
 <!-- Necessaire ce script? -->
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v3.2&appId=2274682666185075&autoLogAppEvents=1">
 </script>
-Pour se connecter a l'applicationcococo :
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+Pour se connecter a cannellenounoucool :
+<fb:login-button scope="public_profile, groups_access_member_info" onlogin="checkLoginState();">
 </fb:login-button>
 
 <div id="status">
