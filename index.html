@@ -51,7 +51,7 @@
 
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
-    });
+    }, {scope: 'groups_access_member_info'});
 
   };
 
@@ -82,6 +82,7 @@
   the FB.login() function when clicked.
 -->
 <div id="fb-root"></div>
+<!-- Necessaire ce script? -->
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_CA/sdk.js#xfbml=1&version=v3.2&appId=2274682666185075&autoLogAppEvents=1">
 </script>
 Pour se connecter a l'application :
